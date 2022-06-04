@@ -9,4 +9,4 @@
 Конвертирует рубль в доллары, евро и британские фунты.
 Выводит результат на основании введенной суммы.
 
-[!Demo](https://pw-converter.netlify.app/)
+### Демо версия сонвертёра валют [!Demo](target="_blank"https://pw-converter.netlify.app/)
