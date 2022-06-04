@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Конвертер валют на JavaScript</title>
+	</head>
+	<body>
+		<div class="container mx-auto px-5 py-24">
+			<div class="flex place-content-center">
+				<div class="border rounded-sm">
+					<!-- Content -->
+					<div class="px-5 py-8">
+						<form>
+							<h1 class="text-4xl mb-4">Конвертер валют</h1>
+
+							<div class="flex flex-wrap gap-8 mb-4">
+								<div class=" border rounded-sm px-2 py-4">
+									<div class="text-lg font-bold">Курс USD</div>
+									<div class="course-item-value text-3xl font-light" data-value="USD">--.--</div>
+								</div>
+								<div class="  border rounded-sm px-2 py-4">
+									<div class="text-lg font-bold">Курс EUR</div>
+									<div class="course-item-value text-3xl font-light" data-value="EUR">--.--</div>
+								</div>
+								<div class="  border rounded-sm px-2 py-4">
+									<div class="text-lg font-bold">Курс GPB</div>
+									<div class="course-item-value text-3xl font-light" data-value="GBP">--.--</div>
+								</div>
+							</div>
+
+							<div class="flex mb-1">
+								<div class="flex flex-col w-1/2 px-2">
+									<label for="name">Отдаю:</label>
+									<select
+										disabled
+										class="form-control border rounded-sm border-gray-300 p-2 focus:outline-none focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"
+										id="exampleFormControlSelect1"
+									>
+										<option value="RUB" selected>RUB — Рубли</option>
+									</select>
+								</div>
+								<div class="flex flex-col w-1/2 px-2">
+									<label for="name">Получаю:</label>
+									<select
+										id="select"
+										class="form-control border rounded-sm border-gray-300 p-2 focus:outline-none focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"
+										id="exampleFormControlSelect1"
+									>
+										<option value="USD">USD — Доллар США</option>
+										<option value="EUR">EUR — Евро</option>
+										<option value="GBP">GPB — Фунт стерлингов</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="flex">
+								<div class="flex flex-col px-2">
+									<input
+										id="input"
+										type="number"
+										class="form-control border rounded-sm border-gray-300 p-2 focus:outline-none focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"
+										id="name"
+										autofocus
+									/>
+								</div>
+								<div class="flex flex-col px-2">
+									<input
+										id="result"
+										type="number"
+										class="form-control border rounded-sm border-gray-300 p-2 focus:outline-none focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"
+										id="name"
+									/>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- // Content -->
+				</div>
+				<!-- // col-6 -->
+			</div>
+			<!-- // row -->
+		</div>
+		<!-- // container -->
+
+		<footer class="container mx-auto p-5 text-center">
+			<a class="mx-4" target="_blank"  href="https://www.cbr-xml-daily.ru/">Курсы валют ЦБ РФ в XML</a>
+			<a class="mx-4" target="_blank" href="https://github.com/poliweb/converter-currencya">Код на GitHub</a>
+		</footer>
+
+		<script src="main.js"></script>
+	</body>
+</html>
